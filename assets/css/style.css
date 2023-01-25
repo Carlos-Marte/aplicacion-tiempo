@@ -5,5 +5,122 @@
 }
 
 body {
+    min-width: 320px;
     font-family: sans-serif;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main */
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    align-items: center;
+}
+
+/* Data */
+.data {
+    width: 100%;
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    padding: 0 1em;
+}
+
+.data__input {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.1em;
+    padding: .5em;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    transition: background .2s ease;
+}
+
+.data__input:focus {
+    background: #F5F5F5;
+}
+
+.data__button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.data__icon {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Information */
+.information {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    row-gap: 1em;
+    place-items: center;
+    grid-template-areas:
+        "h2 h2"
+        "country country"
+        "temperature temperature"
+        "condition condition"
+        "sensation wind"
+        "humidity humidity";
+}
+
+.information__h2 {
+    grid-area: h2;
+    letter-spacing: 1px;
+}
+
+.information__text {
+    display: inline-block;
+}
+
+.information__text--l {
+    font-size: 1.5em;
+}
+
+.information__text--xl {
+    font-size: 3em;
+}
+
+.information__icon {
+    width: 100%;
+}
+
+/* Grid areas */
+.information__text--country {
+    grid-area: country;
+}
+
+.information__text--temperature {
+    grid-area: temperature;
+}
+
+.information__container--condition {
+    grid-area: condition;
+    display: flex;
+    align-items: center;
+}
+
+.information__text--sensation {
+    grid-area: sensation;
+}
+
+.information__text--wind {
+    grid-area: wind;
+}
+
+.information__text--humidity {
+    grid-area: humidity;
 }
