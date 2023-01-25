@@ -124,3 +124,18 @@ body {
 .information__text--humidity {
     grid-area: humidity;
 }
+
+/* Desktop and tablet*/
+@media only screen and (min-width: 768px) {
+    .information__text {
+        font-size: 1.1em;
+    }
+
+    .information__text--l {
+        font-size: 1.5em;
+    }
+    
+    .information__text--xl {
+        font-size: 3em;
+    }
+}
