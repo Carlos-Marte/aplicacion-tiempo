@@ -84,6 +84,7 @@ body {
 
 .information__text {
     display: inline-block;
+    text-align: center;
 }
 
 .information__text--l {
