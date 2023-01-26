@@ -45,26 +45,15 @@
 
         <!-- Data -->
         <section class="data">
-            <input type="text" class="data__input">
+            <input id="input-country" type="text" placeholder="Ingrese un país" class="data__input">
             <button class="data__button">
-                <img src="./assets/images/search-icon.svg" alt="Search icon" class="data__icon">
+                <img src="./assets/images/search-icon.svg" alt="Search icon" id="icon-button" class="data__icon">
             </button>
         </section>
 
         <!-- Information -->
-        <section class="information">
-            <!-- <h2 class="information__h2">Esperando...</h2> -->
-
-            <div class="information__text information__text--l information__text--country">Bogotá</div>
-            <div class="information__text information__text--xl information__text--temperature">25°C</div>
-            <div class="information__container information__container--condition">
-                <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Time condition icon" loading="lazy"
-                    class="information__icon">
-                <div class="information__text information__text--l">Nublado</div>
-            </div>
-            <div class="information__text information__text--sensation">Sensación: 28°C</div>
-            <div class="information__text information__text--wind">Viento: 26/kph</div>
-            <div class="information__text information__text--humidity">Humedad: 62%</div>
+        <section id="information-container" class="information">
+            <h2 class="information__h2">Esperando un país...</h2>
         </section>
     </main>
 
