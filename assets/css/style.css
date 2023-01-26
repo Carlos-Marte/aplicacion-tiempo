@@ -95,7 +95,7 @@ body {
 }
 
 .information__icon {
-    width: 100%;
+    width: max-content;
 }
 
 /* Grid areas */
